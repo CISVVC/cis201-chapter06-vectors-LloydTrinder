@@ -131,7 +131,7 @@ double Statement::aver_daily(double average, int days)//calculates the average d
    if( i > last_day && i < days)
      total_average += average;
   
-   the_average = total_average / 30.0;
+   the_average = total_average / 30.0; 
 }  
 
 double Statement::min_daily(double a = 35)// checks whether the user has enough in their account and penalizes if they dont
@@ -145,7 +145,7 @@ double Statement::min_daily(double a = 35)// checks whether the user has enough 
 
 double Statement::get_aver()
 {
-  return 0;
+  return the_average;
 }
 
 int main()
